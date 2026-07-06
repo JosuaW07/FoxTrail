@@ -12,4 +12,3 @@ function checkAnswer(questionNumber, correctAnswer) {
     input.disabled = true;
   }
 }
-d
