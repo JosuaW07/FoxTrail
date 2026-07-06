@@ -3,13 +3,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css"> 
+    <script src="script.js" defer></script>
     <title>FoxTrail</title>
 </head>
 <body>
-    <h1>Fox Trail</h1>
-    <label for="p1">1 Posten, Warum ist Josua Gay?</label>
-    <br/>
-    <input class="p1" />
-    <button>bestätigen</button>
+    <div id="quiz">
+        <div class="question" id="q1">
+            <label>Why is josua gay?</label>
+            <br/>
+            <input type="text" id="input1" onkeyup="checkAnswer(1, 'IDK')">
+        </div>
+        <div class="question" id="q2" style="display:none;">
+            <label>What is the capital of France?</label>
+            <br/>
+            <input type="text" id="input2" onkeyup="checkAnswer(2, 'Tashkent')">
+        </div>
+    </div>
 </body>
 </html>
