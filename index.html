@@ -8,17 +8,19 @@
     <title>FoxTrail</title>
 </head>
 <body>
-    <h1>FoxTrail</h1>
+    <h1 style="color: aliceblue;" >FoxTrail</h1>
     <div id="quiz">
         <div class="question" id="q1">
             <label class="terminal">&gt; 2+2?</label>
             <br/>
             <input type="text" id="input1" onkeyup="checkAnswer(1, '4')" class="terminal">
+            <span id="status1" class="terminal"></span>
         </div>
         <div class="question" id="q2" style="display:none;">
             <label class="terminal">&gt; capital of France?</label>
             <br/>
             <input type="text" id="input2" onkeyup="checkAnswer(2, 'Paris')" class="terminal">
+            <span id="status2" class="terminal"></span>
         </div>
     </div>
 </body>
