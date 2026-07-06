@@ -1,12 +1,4 @@
-.question {
-    background-color: antiquewhite;
-    max-width: 100%;
-    border: 1px solid #e2e8f0;
-    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 
-                0 2px 4px -1px rgba(0, 0, 0, 0.06);
-    background-color: #ffb3b3;
-    padding: 8px;
-}
+
 
 footer {
   position: fixed;
@@ -17,3 +9,8 @@ footer {
   color: white;
   padding: 1rem;
 }
+
+
+body { background:#000; }
+  
+.terminal { color:#0f0; font-family: monospace; font-size:18px; background:transparent; border:none; outline:none; }

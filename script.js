@@ -1,14 +1,11 @@
-function checkAnswer(questionNumber, correctAnswer) {
-  const input = document.getElementById('input' + questionNumber);
-  const userAnswer = input.value.trim().toLowerCase();
-
-  if (userAnswer === correctAnswer.toLowerCase()) {
-    // Show the next question
-    const nextQuestion = document.getElementById('q' + (questionNumber + 1));
-    if (nextQuestion) {
-      nextQuestion.style.display = 'block';
-    }
-    // Optional: lock this input so it can't be changed
+function checkAnswer(num, correct) {
+  const input = document.getElementById('input' + num);
+  if (input.value.trim().toLowerCase() === correct.toLowerCase()) {
     input.disabled = true;
+    const next = document.getElementById('q' + (num + 1));
+    if (next) {
+      next.style.display = 'block';
+      next.querySelector('input').focus();
+    }
   }
 }
