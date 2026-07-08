@@ -10,7 +10,7 @@ const POSTEN = [
   {
     nr: '02', ort: 'Bahnhof Unterführung',
     rätsel: 'Ha! Du glaubst, du bist mir auf der Spur? Dann beweise es! Ich bin der Knotenpunkt, durch den täglich Tausende strömen – aber niemand bleibt. Stahl auf Stahl, Strom im Draht, Abfahrt in 2 Minuten.\n\nGeh vom Kesselhaus durch die Unterführung des Bahnhofs Winterthur. Begib dich zum zweiten Bahnsteig.',
-    frage: 'Welche Zahl siehst du am zweiten Bahnsteig?',
+    frage: 'Welche Zahlen siehst du am zweiten Bahnsteig?',
     antwort: ['67'],
     tipps: ['Schau auf die Schilder direkt am Bahnsteig.', 'Es ist eine zweistellige Zahl.', 'Schau auf das grosse Bahnsteigschild selbst.']
   },
@@ -19,35 +19,35 @@ const POSTEN = [
     rätsel: '„Der Name dieses Ortes führt dich in die Irre: Du findest hier weder Spielautomaten noch Pokertische, sondern Pointen, Comedy und Theater auf den Brettern, die die Welt bedeuten. "',
     frage: 'Welches Wort prangt gross in schwarz über dem Eingangsportal?',
     antwort: ['theater', 'theatre'],
-    tipps: ['Steh direkt vor dem Haupteingang und schau nach oben.', 'Es ist ein einzelnes deutsches Wort.', 'Es beschreibt, was in diesem Gebäude stattfindet.']
+    tipps: ['Steh direkt vor dem Haupteingang des Casino Theaters und schau nach oben.', 'Es ist ein einzelnes deutsches Wort.', 'Es beschreibt, was in diesem Gebäude stattfindet.']
   },
   {
     nr: '04', ort: 'Rathaus, Marktgasse 20',
     rätsel: 'Fast hast du mich. FAST. Ich bin ein Gebäude der Macht – und doch gehöre ich dem Volk. Mein Inneres verbirgt einen Lichthof, den die meisten übersehen. Neorenaissance, Arkaden, und eine Stille die täuscht.\n\nGeh zur Marktgasse 20, durch den Rathausdurchgang.',
     frage: 'Wie viele Arkadenbögen überspannen den Rathausdurchgang? (Nur die Bögen direkt über dir)',
     antwort: ['3', 'drei'],
-    tipps: ['Steh mitten im Durchgang und schau senkrecht nach oben.', 'Zähle nur die Bögen, die den Gang überdachen.', 'Es sind weniger als fünf Bögen.']
+    tipps: ['Steh mitten im Durchgang des Rathauses und schau senkrecht nach oben.', 'Zähle nur die Bögen, die den Gang überdachen.', 'Es sind weniger als fünf Bögen.']
   },
   {
     nr: '05', ort: 'Stadtkirche',
     rätsel: '„Meine zwei Türme überblicken alles, doch läuten tut nur einer. "',
     frage: 'Welche Farbe hat das Innere des Zifferblattes?',
     antwort: ['blau', 'blue'],
-    tipps: ['Schau an der Kirchenfassade nach oben zur Uhr.', 'Es ist eine kühle Farbe – denk an Himmel oder Meer.', 'Die Farbe beginnt mit B.']
+    tipps: ['Schau an der Kirchenfassade der Stadtkirche nach oben zur Uhr.', 'Es ist eine kühle Farbe – denk an Himmel oder Meer.', 'Die Farbe beginnt mit B.']
   },
   {
     nr: '06', ort: 'Gewerbemuseum',
     rätsel: '„Ich bin kein Ort für alten Staub, sondern für Handwerk, Design und Stoffe. In meinem Inneren schlägt das Herz der Zeit – tickend, ratternd und mechanisch. An meiner Fassade prangt eine Uhr, die alle Blicke auf sich zieht. "',
     frage: 'Welches Wort steht auf dem Zifferblatt der Fassadenuhr?',
     antwort: ['gewerbemuseum'],
-    tipps: ['Schau direkt auf die grosse Uhr an der Gebäudefassade.', 'Das Wort ist gleichzeitig der Name des Gebäudes.', 'Es beginnt mit „G“ und hat 13 Buchstaben.']
+    tipps: ['Schau direkt auf die grosse Uhr an der Gebäudefassade des Gewerbemuseums.', 'Das Wort ist gleichzeitig der Name des Gebäudes.', 'Es beginnt mit „G“ und hat 13 Buchstaben.']
   },
   {
     nr: '07', ort: 'Fischmädchen-Brunnen',
     rätsel: '„Ich stehe mitten in der Altstadt auf dem Neumarkt und halte stolz meine Beute fest. Das Wasser fliesst, doch ich bewege mich nie. "',
     frage: 'In welche Himmelsrichtung blickt das Fischmädchen?',
     antwort: ['süden', 'sueden', 'süd', 'south'],
-    tipps: ['Stell dich neben den Brunnen und schau in dieselbe Richtung wie die Figur.', 'Es ist die Richtung, die dem Norden gegenüberliegt.', 'Die Figur blickt Richtung Süden.']
+    tipps: ['Stell dich neben den Fischmädchen Brunnen und schau in dieselbe Richtung wie die Figur.', 'Es ist die Richtung, die dem Norden gegenüberliegt.', 'Die Figur blickt Richtung Süden.']
   },
   {
     nr: '08', ort: 'Kesselhaus (Finale)',
@@ -74,7 +74,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     card.innerHTML = `
       <div class="posten-header">
-        <span class="terminal">POSTEN ${p.nr} - ${p.ort}</span>
+        <span class="terminal">POSTEN ${p.nr}</span>
       </div>
       <p class="rätsel-text terminal">${p.rätsel.replace(/\n/g, '<br><br>')}</p>
       <p class="sub-question terminal">&gt; ${p.frage}</p>
