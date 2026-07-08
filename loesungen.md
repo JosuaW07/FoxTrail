@@ -26,15 +26,42 @@
 
 - Posten 3
 
-    Frage
-    "Meine zwei Türme überblicke alles doch läuten tut nur einer.
+    Frage:
+    "Meine zwei Türme überblicken alles, doch läuten tut nur einer."
 
     Ort: Stadtkirche
 
-    Ortsfrage: Welche Farbe hat das innere meines Zifferblates?
+    Ortsfrage:
+    Welche Farbe hat das Innere meines Zifferblattes?
+
+    Antwort: Blau
 
 - Posten 4
 
-    
+    Frage:
+    "Ich bin kein Ort für alten Staub, sondern für Handwerk, Design und Stoffe. In meinem Inneren schlägt das Herz der Zeit – tickend, ratternd und mechanisch. An meiner Fassade prangt eine Uhr, die alle Blicke auf sich zieht."
 
+    Ort: Gewerbemuseum
 
+    Ortsfrage:
+    Sag mir: Welches Wort steht auf meinem Zifferblatt geschrieben, wenn du ganz genau hinsiehst?
+
+    Antwort: Gewerbemuseum
+
+- Posten 5
+
+    Frage:
+    "Ich stehe mitten in der Altstadt auf dem Neumarkt und halte stolz meine Beute fest. Das Wasser fliesst, doch ich bewege mich nie."
+
+    Ort: Fischmädchen-Brunnen
+
+    Ortsfrage:
+    Schau mir genau ins Gesicht und sag mir: In welche Himmelsrichtung blicke ich Tag und Nacht?
+
+    Antwort: Süden
+
+- Posten 6
+
+    gehe vom kesselhaus her in die unterführung vom bahnhof winterhur. gehe dort zum zweiten bahnsteig, welche zwei gleise verlaufen darauf?
+
+    Antwort: 67
