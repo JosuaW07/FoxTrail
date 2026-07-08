@@ -1,0 +1,173 @@
+
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+body {
+  background: #000;
+  color: #0f0;
+  font-family: monospace;
+  font-size: 18px;
+  min-height: 100vh;
+  padding: 20px;
+  padding-bottom: 80px; /* Platz für den fixierten Footer */
+}
+
+h1 {
+  color: aliceblue;
+  font-family: monospace;
+  margin-bottom: 20px;
+}
+
+
+.terminal {
+  color: #0f0;
+  font-family: monospace;
+  font-size: 18px;
+  background: transparent;
+  border: none;
+  outline: none;
+}
+
+input.terminal {
+  width: 100%;
+  max-width: 300px;
+}
+
+
+.question {
+  margin-bottom: 40px;
+  display: none;
+}
+
+.question.active {
+  display: block;
+  animation: fadeIn 0.3s ease;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.rätsel-text, .sub-question {
+  margin-bottom: 15px;
+  line-height: 1.6;
+}
+
+.sub-question {
+  font-weight: bold;
+}
+
+.input-row {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 10px;
+  flex-wrap: wrap;
+}
+
+.prompt {
+  color: #0f0;
+}
+
+button {
+  background: transparent;
+  border: 1px solid #0f0;
+  color: #0f0;
+  font-family: monospace;
+  font-size: 16px;
+  padding: 5px 12px;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+button:hover {
+  background: #0f0;
+  color: #000;
+}
+
+button:disabled {
+  opacity: 0.3;
+  cursor: not-allowed;
+  border-color: #555;
+  color: #555;
+}
+
+.feedback-box {
+  margin-top: 10px;
+  font-size: 16px;
+  min-height: 20px;
+}
+
+.feedback-box.correct { color: #0f0; }
+.feedback-box.wrong { color: #f55; }
+.feedback-box.revealed { color: #ff0; }
+.feedback-box.tipp { color: #ff0; }
+
+.status {
+  font-size: 18px;
+  margin-left: 5px;
+}
+
+.tries-label {
+  font-size: 14px;
+  color: #888;
+  margin-top: 5px;
+  display: block;
+}
+
+#progress-label {
+  font-size: 14px;
+  color: #888;
+  margin-bottom: 5px;
+}
+
+#progress-bar {
+  width: 100%;
+  height: 4px;
+  background: #333;
+  margin-bottom: 30px;
+}
+
+#progress-fill {
+  height: 100%;
+  background: #0f0;
+  width: 0%;
+  transition: width 0.5s;
+}
+
+#finale {
+  display: none;
+  margin-top: 40px;
+  text-align: center;
+}
+
+#finale h2 {
+  color: #0f0;
+  margin-bottom: 15px;
+  font-size: 24px;
+}
+
+#finale p {
+  color: #0f0;
+  line-height: 1.6;
+}
+
+
+footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background: #222;
+  color: white;
+  padding: 1rem;
+  text-align: center;
+  font-family: monospace;
+  font-size: 14px;
+}
+
+@keyframes shake {
+  0%, 100% { transform: translateX(0); }
+  25% { transform: translateX(-5px); }
+  75% { transform: translateX(5px); }
+}
