@@ -1,30 +1,31 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="de">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css"> 
+    <link rel="stylesheet" href="style.css">
     <script src="script.js" defer></script>
-    <title>FoxTrail</title>
+    <title>FoxTrail Winterthur</title>
 </head>
 <body>
-    <h1 style="color: aliceblue;" >FoxTrail</h1>
-    <div id="quiz">
-        <div class="question" id="q1">
-            <label class="terminal">&gt; 2+2?</label>
-            <br/>
-            <input type="text" id="input1" onkeyup="checkAnswer(1, '4')" class="terminal">
-            <span id="status1" class="terminal"></span>
-        </div>
-        <div class="question" id="q2" style="display:none;">
-            <label class="terminal">&gt; capital of France?</label>
-            <br/>
-            <input type="text" id="input2" onkeyup="checkAnswer(2, 'Paris')" class="terminal">
-            <span id="status2" class="terminal"></span>
-        </div>
-    </div>
-</body>
+<h1>FoxTrail Winterthur</h1>
+
+<div id="progress-label">
+    <span id="solved-count">0</span> / 8 Posten gelöst
+</div>
+<div id="progress-bar">
+    <div id="progress-fill"></div>
+</div>
+
+<div id="quiz"></div>
+
+<div id="finale">
+    <h2>🦊 DU HAST DEN FUCHS GEFANGEN!</h2>
+    <p>Alle 8 Posten des FoxTrails Winterthur gelöst.<br>Gut gemacht, Detektiv.</p>
+</div>
+
 <footer>
-    <h3>Tymur Arduch; Josua Welsche; Laurens Hertzer ©</h3>
+    Tymur Arduch · Josua Welsche · Laurens Hertzer ©
 </footer>
+</body>
 </html>
