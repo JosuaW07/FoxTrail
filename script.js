@@ -10,7 +10,7 @@ const POSTEN = [
   {
     nr: '02', ort: 'Bahnhof Unterführung',
     rätsel: 'Ha! Du glaubst, du bist mir auf der Spur? Dann beweise es! Ich bin der Knotenpunkt, durch den täglich Tausende strömen – aber niemand bleibt. Stahl auf Stahl, Strom im Draht, Abfahrt in 2 Minuten.\n\nGeh vom Kesselhaus durch die Unterführung des Bahnhofs Winterthur. Begib dich zum zweiten Bahnsteig.',
-    frage: 'Welche Zahl siehst du am zweiten Bahnsteig?',
+    frage: 'Welche Zahlen siehst du am zweiten Bahnsteig?',
     antwort: ['67'],
     tipps: ['Schau auf die Schilder direkt am Bahnsteig.', 'Es ist eine zweistellige Zahl.', 'Schau auf das grosse Bahnsteigschild selbst.']
   },
